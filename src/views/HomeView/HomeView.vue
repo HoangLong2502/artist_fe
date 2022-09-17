@@ -17,7 +17,7 @@
         <div 
           class="ele ele-2__container"
           :style="'width :' + widthScreen + 'px'">
-          <ProjectList />
+          <AboutMe />
         </div>
       </div>
 
@@ -25,15 +25,31 @@
         :style="'width :' + widthScreen + 'px'"
         class="session-2">
         <div class="ele ele-3__container">
-          3
+          <ProjectList />
         </div>
       </div>
 
       <div 
+        id="session-3"
+        :style="'width :' + 2*widthScreen + 'px'"
+        class="session-3 f">
+        <div class="ele ele-4__container">
+          <OrderProject />
+        </div>
+        <div class="ele ele-4__container">
+          <div class="h100 f jcc aic">
+            <div class="h1">
+              My <br>
+              Capabilities
+            </div>
+          </div>
+        </div>
+      </div>
+      <div 
         :style="'width :' + widthScreen + 'px'"
         class="session-3">
         <div class="ele ele-4__container">
-          4
+          <DirectionList />
         </div>
       </div>
     </div>
@@ -44,14 +60,20 @@
 import HeaderView from '@/components/HeaderView/HeaderView.vue'
 
 import HomeSession from '@/components/HomeSession/HomeSession.vue'
+import AboutMe from '@/components/AboutMe/AboutMe.vue'
 import ProjectList from '@/components/ProjectList/ProjectList.vue'
+import OrderProject from '@/components/OrderProject/OrderProject.vue'
+import DirectionList from '@/components/DirectionList/DirectionList.vue'
 
 export default {
   name: 'HomeView',
   components: {
     HeaderView,
     HomeSession,
-    ProjectList
+    AboutMe,
+    ProjectList,
+    OrderProject,
+    DirectionList
   },
 
   data () {
@@ -70,32 +92,47 @@ export default {
     this.widthScreen = window.innerWidth
   },
 
-  watch : {
-    'pointTranslate3d_Y' : function () {
-      console.log(1);
-    }
-  },
+  // watch : {
+  //   'pointTranslate3d_Y' : function () {
+  //     console.log(1);
+  //   }
+  // },
 
   methods: {
     async handleScroll () {
-      this.pointScrollY > window.scrollY ? this.pointTranslate3d_Y++ : this.pointTranslate3d_Y--
+      // this.pointScrollY > window.scrollY ? this.pointTranslate3d_Y++ : this.pointTranslate3d_Y--
       
       this.pointScrollY = window.scrollY
 
       var number = (window.scrollY*(this.widthScreen/this.heightScreen))/(this.widthScreen*2) > 0.5 ? 0.5 : (window.scrollY*(this.widthScreen/this.heightScreen))/(this.widthScreen*2)
 
+      var numberSession_3 = (window.scrollY*(this.widthScreen/this.heightScreen))/(this.widthScreen*2) >= 2 ? 2 : (window.scrollY*(this.widthScreen/this.heightScreen))/(this.widthScreen*2)
+
       var session_1 = document.getElementById('session-1')
 
       var sessionContainer = document.getElementById('sessionContainer')
 
-      if (number < 0.5) {
+      var session_3 = document.getElementById('session-3')
+
+      if (number < 0.5 && numberSession_3 < 1.5) {
         sessionContainer.style.transform = `translate3d(0, 0, 0)`
         session_1.style.transform = `translate3d(-${number*100}%, 0, 0)`
-      } else if (number = 0.5) {
-        number = 0.5
+      } else if (number === 0.5 && numberSession_3 < 1.5) {
         session_1.style.transform = `translate3d(-${50}%, 0, 0)`
         sessionContainer.style.transform = `translate3d(0, -${window.scrollY - this.heightScreen}px, 0)`
+        session_3.style.transform = `translate3d(-0, 0, 0)`
+      } else if (number === 0.5 && 1.5 <= numberSession_3 < 1.9) {
+        window.screenY = 3*this.heightScreen
+        sessionContainer.style.transform = `translate3d(0, -${2*this.heightScreen}px, 0)`
+        session_3.style.transform = `translate3d(-${(numberSession_3 - 1.5)*100}%, 0, 0)`
       } 
+        
+      if (number === 0.5 && numberSession_3 == 2) {
+        // window.scroll(0, 3*this.heightScreen);
+        // console.log(window.scrollY,'123');
+        session_3.style.transform = `translate3d(-${50}%, 0, 0)`
+        sessionContainer.style.transform = `translate3d(0, -${window.scrollY - 2*this.heightScreen}px, 0)`
+      }
       // else if (number = 0.5) {
       //   sessionContainer.style.transform = `translate3d(0, -${window.scrollY - this.widthScreen}px, 0)`
       // }

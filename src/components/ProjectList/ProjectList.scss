@@ -1,0 +1,31 @@
+
+
+.project-list__item {
+    border: 1px solid white;
+    padding: 18px 31px;
+
+    & .item-slide {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        padding-right: -600px;
+
+        transition: 0.4s;
+        background-color: transparent;
+    }
+}
+
+.active {
+    background-color: #fff !important;
+}
+
+.marquee {
+    animation: marquee 32s linear infinite;
+}
+
+@keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }

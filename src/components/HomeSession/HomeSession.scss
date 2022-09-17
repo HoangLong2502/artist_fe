@@ -2,6 +2,8 @@
 
 .home__container {
     height: 100%;
+    background-image: url('/src/assets/bg-home.png');
+    background-repeat: no-repeat;
 }
 
 .home-text {
@@ -14,6 +16,48 @@
     left: 1400px;
 }
 
-// .item-change {
-//     opacity: 0;
-// }
+.item-show {
+    animation: showKey-1 2s linear infinite;
+}
+
+@keyframes showKey-1 {
+    0% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.item-hide {
+    top: 0;
+    left: 0;
+    animation: showKey-2 2s linear infinite;
+}
+
+@keyframes showKey-2 {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

@@ -1,0 +1,59 @@
+
+
+.order-project__body {
+    display: grid;
+    grid-template-columns: calc((100% - 48px*2)/3) calc((100% - 48px*2)/3) calc((100% - 48px*2)/3);
+    gap: 48px;
+
+    & .position {
+        background-color: rgba(0, 0, 0, 0.099);
+        // border: 4px solid #000;
+    }
+}
+
+.bit-border {
+    position: absolute;
+}
+
+.bit-top-left {
+    top: -4px;
+    left: -4px;
+}
+
+.bit-top-right {
+    transform: rotate(90deg);
+    top: -4px;
+    right: -4px;
+}
+
+.bit-bottom-right {
+    transform: rotate(180deg);
+    bottom: -4px;
+    right: -4px;
+}
+
+.bit-bottom-left {
+    transform: rotate(270deg);
+    bottom: -4px;
+    left: -4px;
+}
+
+.bit-width-top {
+    top: -4px;
+    left: 4px;
+}
+
+.bit-width-bottom {
+    bottom: -4px;
+    left: 4px;
+}
+
+.bit-height-top {
+    top: 7px;
+    left: -4px;
+}
+
+.bit-height-bottom {
+    top: 6px;
+    right: -4px;
+}

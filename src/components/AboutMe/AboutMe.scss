@@ -1,0 +1,21 @@
+
+
+.about-me-img {
+
+    & img {
+        width: 600px;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.about-me-bg {
+    opacity: 0.5;
+    left: 5em;
+    bottom: 0;
+    width: 1034px;
+    height: 538px;
+
+    background-image: url('/src//assets/SELECTED_WORK.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+}

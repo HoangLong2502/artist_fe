@@ -8,21 +8,21 @@
 }
 
 @font-face {
-  src: url('/global/Helvetica-Neue-Viet-hoa/Helvetica/helvetica-neue-regular.ttf');
-  font-family: Helvetica_Neue_Regular;
+  src: url('/global/font/PPMondwest-Regular.ttf');
+  font-family: PPBit_Regular;
 }
 
 %f-primary-2 {
-  font-family: 'Helvetica_Neue_Regular';
+  font-family: 'PPBit_Regular';
 }
 
 @font-face {
-  src: url('/global/Helvetica-Neue-Viet-hoa/Helvetica/helvetica-neue-medium.ttf');
-  font-family: Helvetica_Neue_Medium;
+  src: url('/global/font/PPNeueBit-Bold.ttf');
+  font-family: PPBit_Bold;
 }
 
 %f-primary-3 {
-  font-family: 'Helvetica_Neue_Medium';
+  font-family: 'PPBit_Bold';
 }
 
 @font-face {
@@ -48,11 +48,11 @@ body {
 }
 
 %h1 {
-  @extend %f-primary-1;
+  @extend %f-primary-3;
   font-style: normal;
   font-weight: 700;
-  font-size: 140px;
-  line-height: 140px;
+  font-size: 213px;
+  line-height: 174px;
 }
 
 .h1,
@@ -61,11 +61,11 @@ h1 {
 }
 
 %h2 {
-  @extend %f-primary-1;
+  @extend %f-primary-3;
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 24px;
+  line-height: 36px;
 }
 
 .h2,
@@ -87,11 +87,11 @@ h3 {
 }
 
 %h4 {
-  @extend %f-primary-1;
+  @extend %f-primary-3;
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 27px;
+  font-size: 40px;
+  line-height: 60px;
 }
 
 .h4,
@@ -100,11 +100,11 @@ h4 {
 }
 
 %h5 {
-  @extend %f-primary-1;
+  @extend %f-primary-3;
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 20px;
+  line-height: 14px;
 }
 
 .h5,
@@ -116,8 +116,8 @@ h5 {
   @extend %f-primary-1;
   font-style: normal;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 21px;
+  font-size: 64px;
+  line-height: 46px;
 }
 
 .h6,
@@ -131,25 +131,12 @@ label {
   @extend %h6;
 }
 
-%p1 {
+%p2 {
   @extend %f-primary-3;
   font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 27px;
-}
-
-.p1,
-p1 {
-  @extend %p1;
-}
-
-%p2 {
-  @extend %f-primary-2;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 27px;
+  font-weight: 700;
+  font-size: 300px;
+  line-height: 269px;
 }
 
 .p2,
@@ -158,11 +145,11 @@ p2 {
 }
 
 %p3 {
-  @extend %f-primary-1;
+  @extend %f-primary-3;
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 120px;
+  line-height: 120px;
 }
 
 .p3,
@@ -171,11 +158,11 @@ p3 {
 }
 
 %p4 {
-  @extend %f-primary-2;
+  @extend %f-primary-3;
   font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
 }
 
 .p4,
