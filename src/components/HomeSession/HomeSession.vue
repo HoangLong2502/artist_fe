@@ -1,24 +1,45 @@
 @<template>
     <div class="home__container relative f aic pt5 pl2 pr2">
         <div class="home-content h1 f fdc ais">
-            <div>
-                <span class="relative">
+            <div class="f aic">
+                <div class="relative">
                     <span class="item-change item-show">C</span>
                     <span 
-                        style="width: 100px"
-                        class="item-change item-hide absolute">
-                        <svg width="120" height="120" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M4 6V5H5V4H6V3H16V4H17V5H18V6H19V5V4H21V10H15V8H17V7H16V6H15V5H8V6H7V7H6V8H5V16H6V17H7V18H8V19H15V18H16V17H17V16H18V15H20V18H19V19H18V20H17V21H6V20H5V19H4V18H3V6H4Z" fill="white"/>
-                        </svg>
+                        class="item-change item-hide-1 absolute">
+                        <div class="icon-home-4"></div>
                     </span>
-                </span>
+                </div>
                 <span>r</span><span>e</span><span>a</span><span>t</span><span>e</span>
             </div>
-            <div class="red">
-                <span>M</span><span>e</span><span>m</span><span>o</span><span>r</span><span>a</span><span>b</span><span>l</span><span>e</span>
+            <div class="red f aic">
+                <span>M</span><span>e</span><span>m</span>
+                <!-- <span>o</span> -->
+                <div class="relative">
+                    <span class="item-change item-hide-1">o</span>
+                    <span 
+                        class="item-change item-show absolute">
+                        <div class="icon-home-1"></div>
+                    </span>
+                </div>
+                <span>r</span><span>a</span><span>b</span><span>l</span>
+                <div class="relative">
+                    <span class="item-change item-show">e</span>
+                    <span 
+                        class="item-change item-hide-1 absolute">
+                        <div class="icon-home-2"></div>
+                    </span>
+                </div>
             </div>
-            <div>
-                <span>E</span><span>x</span><span>p</span><span>e</span><span>r</span><span>i</span><span>e</span><span>n</span><span>c</span><span>e</span><span>s</span>
+            <div class="f aic">
+                <span>E</span><span>x</span><span>p</span>
+                <div class="relative">
+                    <span class="item-change item-show">e</span>
+                    <span 
+                        class="item-change item-hide-1 absolute">
+                        <div class="icon-home-3"></div>
+                    </span>
+                </div>
+                <span>r</span><span>i</span><span>e</span><span>n</span><span>c</span><span>e</span><span>s</span>
             </div>
             <div class="red">
                 <span>F</span><span>o</span><span>r</span><span> B</span><span>u</span><span>s</span><span>i</span><span>n</span><span>e</span><span>s</span><span>s</span>

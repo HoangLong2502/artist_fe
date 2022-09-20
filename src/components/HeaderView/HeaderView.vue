@@ -1,5 +1,5 @@
 @<template>
-    <div class="header__container f jcb ais fixed w100 z10">
+    <div class="header__container f jcb ais fixed w100 z10 bg-black">
         <div class="h2">
             Trung Phan.
         </div>

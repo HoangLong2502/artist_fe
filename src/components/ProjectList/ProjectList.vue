@@ -25,10 +25,8 @@
                 scrolldelay='20'
                 truespeed
                 vspace='1000px'
-                v-if="item.showSlide"
                 class="item-slide absolute f aic"
-                style="gap : 1em"
-                :class="item.showSlide ? 'active' : null">
+                style="gap : 1em">
                 <div 
                     class="f aic" style="gap: 1em">
                     <div 

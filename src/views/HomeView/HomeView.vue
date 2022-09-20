@@ -102,11 +102,11 @@ export default {
     async handleScroll () {
       // this.pointScrollY > window.scrollY ? this.pointTranslate3d_Y++ : this.pointTranslate3d_Y--
       
-      this.pointScrollY = window.scrollY
+      this.pointScrollY = (window.scrollY/4)
 
-      var number = (window.scrollY*(this.widthScreen/this.heightScreen))/(this.widthScreen*2) > 0.5 ? 0.5 : (window.scrollY*(this.widthScreen/this.heightScreen))/(this.widthScreen*2)
+      var number = ((window.scrollY/4)*(this.widthScreen/this.heightScreen))/(this.widthScreen*2) > 0.5 ? 0.5 : ((window.scrollY/4)*(this.widthScreen/this.heightScreen))/(this.widthScreen*2)
 
-      var numberSession_3 = (window.scrollY*(this.widthScreen/this.heightScreen))/(this.widthScreen*2) >= 2 ? 2 : (window.scrollY*(this.widthScreen/this.heightScreen))/(this.widthScreen*2)
+      var numberSession_3 = (((window.scrollY/4)*(this.widthScreen/this.heightScreen))/(this.widthScreen*2)) >= 2 ? 2 : (((window.scrollY/4)*(this.widthScreen/this.heightScreen))/(this.widthScreen*2))
 
       var session_1 = document.getElementById('session-1')
 
@@ -119,7 +119,7 @@ export default {
         session_1.style.transform = `translate3d(-${number*100}%, 0, 0)`
       } else if (number === 0.5 && numberSession_3 < 1.5) {
         session_1.style.transform = `translate3d(-${50}%, 0, 0)`
-        sessionContainer.style.transform = `translate3d(0, -${window.scrollY - this.heightScreen}px, 0)`
+        sessionContainer.style.transform = `translate3d(0, -${(window.scrollY/4) - this.heightScreen}px, 0)`
         session_3.style.transform = `translate3d(-0, 0, 0)`
       } else if (number === 0.5 && 1.5 <= numberSession_3 < 1.9) {
         window.screenY = 3*this.heightScreen
@@ -129,9 +129,9 @@ export default {
         
       if (number === 0.5 && numberSession_3 == 2) {
         // window.scroll(0, 3*this.heightScreen);
-        // console.log(window.scrollY,'123');
+        // console.log((window.scrollY/4),'123');
         session_3.style.transform = `translate3d(-${50}%, 0, 0)`
-        sessionContainer.style.transform = `translate3d(0, -${window.scrollY - 2*this.heightScreen}px, 0)`
+        sessionContainer.style.transform = `translate3d(0, -${(window.scrollY/4) - 2*this.heightScreen}px, 0)`
       }
       // else if (number = 0.5) {
       //   sessionContainer.style.transform = `translate3d(0, -${window.scrollY - this.widthScreen}px, 0)`

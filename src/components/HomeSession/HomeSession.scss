@@ -17,7 +17,13 @@
 }
 
 .item-show {
-    animation: showKey-1 2s linear infinite;
+    bottom: 12px;
+    left: 8px;
+    animation: showKey-1 3s linear infinite;
+}
+
+span {
+    height: fit-content !important;
 }
 
 @keyframes showKey-1 {
@@ -25,12 +31,20 @@
         opacity: 1;
     }
 
+    15% {
+        opacity: 1;
+    }
+
     25% {
         opacity: 0;
     }
 
     75% {
         opacity: 0;
+    }
+
+    85% {
+        opacity: 1;
     }
 
     100% {
@@ -38,14 +52,24 @@
     }
 }
 
+.item-hide-1 {
+    bottom: 12px;
+    left: 8px;
+    animation: showKey-2 3s linear infinite;
+}
+
 .item-hide {
-    top: 0;
+    bottom: 0;
     left: 0;
-    animation: showKey-2 2s linear infinite;
+    animation: showKey-2 3s linear infinite;
 }
 
 @keyframes showKey-2 {
     0% {
+        opacity: 0;
+    }
+
+    15% {
         opacity: 0;
     }
 
@@ -55,6 +79,10 @@
 
     75% {
         opacity: 1;
+    }
+
+    85% {
+        opacity: 0;
     }
 
     100% {
