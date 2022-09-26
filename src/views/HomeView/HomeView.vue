@@ -53,6 +53,8 @@
         </div>
       </div>
     </div>
+
+    <IntroAnimation />
   </div>
 </template>
 
@@ -65,6 +67,8 @@ import ProjectList from '@/components/ProjectList/ProjectList.vue'
 import OrderProject from '@/components/OrderProject/OrderProject.vue'
 import DirectionList from '@/components/DirectionList/DirectionList.vue'
 
+import IntroAnimation from '@/components/IntroAnimation/IntroAnimation.vue'
+
 export default {
   name: 'HomeView',
   components: {
@@ -73,7 +77,8 @@ export default {
     AboutMe,
     ProjectList,
     OrderProject,
-    DirectionList
+    DirectionList,
+    IntroAnimation
   },
 
   data () {

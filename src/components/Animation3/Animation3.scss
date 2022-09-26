@@ -1,0 +1,30 @@
+.Collaboration {
+    height: 420px;
+    width: 420px;
+
+    &__item {
+        top: 0;
+        left: 0;
+
+        &-1 {
+            animation: animation1 2s linear infinite forwards;
+        }
+    }
+}
+@keyframes animation1 {
+    0% {
+        opacity: 1;
+    }
+
+    45% {
+        opacity: 1;
+    }
+
+    55% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

@@ -1,0 +1,149 @@
+.session-1 {
+    position: relative;
+    width: 501px;
+    height: 501px;
+}
+
+.el--1 {
+    position: absolute;
+    background-color: #1a1a1a;
+    animation: el1 5s linear infinite forwards;
+    transform: rotate(0);
+}
+
+@keyframes el1 {
+    0% {
+        transform: rotate(0);
+    }
+
+    30% {
+        transform: rotate(0);
+    }
+
+    40% {
+        transform: rotate(90deg);
+    }
+
+    90% {
+        transform: rotate(90deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+.el--2 {
+    position: absolute;
+    border-radius: 50%;
+    background: #1a1a1a;
+    padding: 0.25em;
+    z-index: 100;
+    right: 0;
+    top: 0;
+    animation: el2 5s linear infinite forwards;
+}
+
+@keyframes el2 {
+    0% {
+        right: 0;
+        top: 0;
+    }
+
+    10% {
+        right: calc(100% - 80px);
+        top: calc(100% - 85px);
+    }
+
+    20% {
+        right: calc(100% - 80px);
+        top: calc(100% - 85px);
+    }
+
+    30% {
+        right: calc(50% - 80px/2);
+        top: calc(50% - 85px/2);
+    }
+
+    40% {
+        right: calc(50% - 80px/2);
+        top: calc(50% - 85px/2);
+    }
+
+    50% {
+        right: -1em;
+        top: calc(100% - 135px/2);
+    }
+
+    60% {
+        right: -1em;
+        top: calc(100% - 135px/2);
+    }
+
+    70% {
+        right: calc(50% - 80px/2);
+        top: calc(50% - 85px/2);
+    }
+
+    80% {
+        right: 0;
+        top: 0;
+    }
+
+    100% {
+        right: 0;
+        top: 0;
+    }
+}
+
+.el--3 {
+    position: absolute;
+    z-index: 10;
+    transform: rotate(4deg);
+    
+}
+
+.container--2 {
+    transform: rotate(0);
+    animation: el3 5s linear infinite forwards;
+}
+
+@keyframes el3 {
+    0% {
+        transform: rotate(0);
+    }
+
+    10% {
+        transform: rotate(0);
+    }
+
+    20% {
+        transform: rotate(45deg);
+    }
+
+    50% {
+        transform: rotate(45deg);
+    }
+
+    60% {
+        transform: rotate(-45deg);
+    }
+
+    80% {
+        transform: rotate(-45deg);
+    }
+
+    90% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+.container--2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
