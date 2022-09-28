@@ -26,6 +26,8 @@ span {
     height: fit-content !important;
 }
 
+
+
 @keyframes showKey-1 {
     0% {
         opacity: 1;
@@ -87,5 +89,39 @@ span {
 
     100% {
         opacity: 0;
+    }
+}
+
+.animation-0 {
+    margin-top: 7px;
+    height: 75px;
+    width: fit-content;
+    animation: animation0 4s linear infinite forwards;
+
+    &__border {
+        height: 15px;
+        background: #EC1F23;
+    }
+}
+
+@keyframes animation0 {
+    0% {
+        width: 20px;
+    };
+
+    15% {
+        width: 200px;
+    }
+
+    50% {
+        width: 200px;
+    }
+
+    65% {
+        width: 20px;
+    }
+
+    100% {
+        width: 20px;
     }
 }

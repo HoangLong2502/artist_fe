@@ -39,7 +39,7 @@
         <div class="ele ele-4__container">
           <div class="h100 f jcc aic">
             <div class="h1">
-              My <br>
+              <div style="margin-bottom: 50px">My</div>
               Capabilities
             </div>
           </div>

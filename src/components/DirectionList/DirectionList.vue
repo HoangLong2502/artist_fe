@@ -14,9 +14,6 @@
                     and iterate upon the great work they help produce, and always manage to <br>
                     somehow do more with less
                 </div>
-                <div class="h2">
-                    Collaborate with: PO, PM, BA, Dev, Test,...
-                </div>
             </div>
             <div class="item-2 w50 f jcc aic">
                 <Animation1 />
@@ -31,14 +28,11 @@
                 </div>
                 <div class="h2 mb1 align-l">
                     Conduct user research using various techniques to gather information about <br>
-                    user desires and needs. Analyze user researched data, then decide on <br>
-                    the best solutions to make the final product as user-friendly and engaging as <br>
+                    user desires and needs. Analyze user researched data, then decide on the <br>
+                    best solutions to make the final product as user-friendly and engaging as <br>
                     possible. Apply visual hierarchy in the presentation of product content allows <br>
-                    users to understand the importance of all content elements on a page based <br>
-                    on his/her brain's ability to discern differences in color, size, and alignment. <br>
-                </div>
-                <div class="h2">
-                    Collaborate with: PO, PM, BA, Dev, Test,...
+                    users to understand the importance of all content elements on a page based on <br>
+                    his/her brain's ability to discern differences in color, size, and alignment. <br>
                 </div>
             </div>
             <div class="item-2 w50 f jcc aic">
@@ -87,9 +81,6 @@ I myself may have overlooked in my design process.
                     make critical arguments for the product, I have developed a confident <br>
                     communication style together with a fluid presentation flow that will inevitably <br>
                     help me make a positive impact and build trust with the audience.
-                </div>
-                <div class="h2">
-                    Collaborate with: PO, PM, BA, Dev, Test,...
                 </div>
             </div>
             <div class="item-2 w50 f jcc aic">

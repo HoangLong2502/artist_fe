@@ -3,7 +3,7 @@
         v-if="showIntro"
         ref="intro"
         class="intro fixed f jcc aic z10">
-        <div class="h1 relative ml075">
+        <div class="intro--container h1 relative">
             <span>T</span><span style="margin-left: 5px">rung</span>
             <div class="intro--dot absolute bg-white-1 z2"></div>
             <div class="intro--bg absolute z1"></div>
