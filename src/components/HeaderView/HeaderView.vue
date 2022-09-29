@@ -1,5 +1,5 @@
 @<template>
-    <div class="header__container f jcb ais fixed w100 z10 bg-black">
+    <div class="header__container f jcb ais fixed w100 z10 bg-black border-bottom">
         <div class="h2">
             Trung Phan.
         </div>
@@ -30,20 +30,37 @@
             </marquee>
         </div>
 
-        <div></div>
+        <div 
+            @click="contactStatus = true"
+            class="h2 cursor">Contact</div>
 
-        <div class="header-nav absolute f fdc ais" style="gap: 0.5em">
+        <!-- <div class="header-nav absolute f fdc ais" style="gap: 0.5em">
             <div class="h2 cursor">Home</div>
             <div class="h2 cursor">About me</div>
             <div class="h2 cursor">Work</div>
             <div class="h2 cursor">Contact</div>
-        </div>
+        </div> -->
+        <ContactView 
+            v-if="contactStatus"
+            @closePopup='closePopup'/>
     </div>
 </template>
 
 <script>
+import ContactView from '../ContactView/ContactView.vue'
 export default {
+  components: { ContactView },
+    data () {
+        return {
+            contactStatus : false
+        }
+    },
 
+    methods : {
+        closePopup () {
+            this.contactStatus = false
+        }
+    }
 }
 </script>
 
