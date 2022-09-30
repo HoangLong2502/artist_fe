@@ -6,6 +6,22 @@
     width: 100%;
     padding-top: 6em;
     background: rgba(0, 0, 0, 0.144);
+    transition: 0.4s;
+    animation: open 0.4s linear;
+}
+
+@keyframes open {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.close {
+    opacity: 0;
 }
 
 .popup-contact {
@@ -13,6 +29,14 @@
     width: calc(100%);
     padding: 0 15em;
     background: #1a1a1a;
+}
+
+.close-popup {
+    transition: 0.4s;
+    
+    &:hover {
+        color: red;
+    }
 }
 
 input {

@@ -70,7 +70,7 @@ I myself may have overlooked in my design process.
 
         <div class="direction__item f aic w100">
             <div class="item-1 w50 pl5 f fdc ais jcc">
-                <div class="h2 gray">[/> No 2]</div>
+                <div class="h2 gray">[/> No 4]</div>
                 <div class="h4 mb1">
                     Communication & Presentation
                 </div>

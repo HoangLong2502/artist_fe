@@ -66,6 +66,42 @@ span {
     animation: showKey-2 3s linear infinite;
 }
 
+.item-hide-2 {
+    bottom: 0;
+    left: 0;
+    animation: showKey-2 2s linear infinite;
+}
+
+.item-show-2 {
+    bottom: 12px;
+    left: 8px;
+    animation: showKey-1 2s linear infinite;
+}
+
+.item-hide-3 {
+    bottom: 0;
+    left: 0;
+    animation: showKey-2 1.5s linear infinite;
+}
+
+.item-show-3 {
+    bottom: 12px;
+    left: 8px;
+    animation: showKey-1 1.5s linear infinite;
+}
+
+.item-hide-4 {
+    bottom: 0;
+    left: 0;
+    animation: showKey-2 2.5s linear infinite;
+}
+
+.item-show-4 {
+    bottom: 12px;
+    left: 8px;
+    animation: showKey-1 2.5s linear infinite;
+}
+
 @keyframes showKey-2 {
     0% {
         opacity: 0;
@@ -109,11 +145,11 @@ span {
         width: 20px;
     };
 
-    15% {
+    10% {
         width: 200px;
     }
 
-    50% {
+    55% {
         width: 200px;
     }
 

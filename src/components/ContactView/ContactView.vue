@@ -1,5 +1,5 @@
 @<template>
-    <div class="popup">
+    <div ref="popup" class="popup">
         <div class="popup-contact f jcb aic">
             <div class="align-l">
                 <div class="h1" style="margin-bottom: 32px">Get</div> <br>
@@ -9,8 +9,13 @@
             </div>
             <div class="f aic">
                 <div class="f fdc ais px2" style="background-color: #FFFFFF15; width: 576px;">
-                    <div>
+                    <div class="w100 f aic jcb">
                         <img src="./Default.png" alt="">
+                        <div 
+                            @click="handleClose"
+                            class="close-popup h3 cursor">
+                            x
+                        </div>
                     </div>
                     <form  
                         ref="form"
@@ -19,24 +24,34 @@
                         <div class="h4">Information</div>
                         <input 
                             v-model='name'
+                            name="from_name"
                             class="w100 h3 border-bottom"
                             type="text" placeholder="Name">
                         <input 
+                            v-model="phone"
+                            name="phone"
                             class="w100 h3 border-bottom"
                             type="text" placeholder="Phone number">
                         <input 
                             v-model="email"
+                            name="email"
                             class="w100 h3 border-bottom"
                             type="text" placeholder="Email">
                         <input 
                             v-model="message"
+                            name="message"
                             class="w100 h3 border-bottom"
                             type="text" placeholder="Additional information">
                     </form >
                     <div 
                         @click="sendEmail"    
-                        class="mt15">
+                        class="f aic mt15 cursor">
                         <img src="./Default1.png" alt="">
+                        <div 
+                            class="h3 ml05 green"
+                            v-if="statusSend">
+                            Gửi thông tin thành công
+                        </div>
                     </div>
                 </div>
                 <div>
@@ -54,18 +69,21 @@ export default {
         return {
             name: '',
             email: '',
-            message: ''
+            message: '',
+            phone : '',
+
+            statusSend : false
         }
     },
 
     methods : {
-        sendEmail() {
+        sendEmail(e) {
             try {
                 emailjs.sendForm('service_8urgvlp', 'template_x9cumaa', this.$refs.form,
                     'U3jhmBonp1lPEhXzX', {
-                    name: this.name,
-                    email: this.email,
-                    message: this.message
+                        from_name: this.name,
+                        email: this.email,
+                        message: `Số điện thoại : ${this.phone} \n Email : ${this.email} \n Lời nhắn : ${this.message}`
                 })
 
             } catch(error) {
@@ -75,7 +93,16 @@ export default {
             this.name = ''
             this.email = ''
             this.message = ''
+            this.phone = ''
+            this.statusSend = true
         },
+
+        handleClose () {
+            this.$refs.popup.classList.add('close')
+            setTimeout(() => {
+                this.$emit('closePopup')
+            }, 400)
+        }
     }
 }
 </script>

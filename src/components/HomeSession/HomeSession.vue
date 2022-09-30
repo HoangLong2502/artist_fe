@@ -11,9 +11,9 @@
             </div> -->
             <div class="f aic mb025">
                 <div class="relative">
-                    <span class="item-change item-show">C</span>
+                    <span class="item-change item-show-3">C</span>
                     <span 
-                        class="item-change item-hide-1 absolute">
+                        class="item-change item-hide-3 absolute">
                         <div class="icon-home-4"></div>
                     </span>
                 </div>
@@ -23,9 +23,9 @@
                 <span>M</span><span>e</span><span>m</span>
                 <!-- <span>o</span> -->
                 <div class="relative">
-                    <span class="item-change item-hide-1">o</span>
+                    <span class="item-change item-hide-2">o</span>
                     <span 
-                        class="item-change item-show absolute">
+                        class="item-change item-show-2 absolute">
                         <div class="icon-home-1"></div>
                     </span>
                 </div>
@@ -49,10 +49,10 @@
                 </div>
                 <span>r</span><span>i</span><span>e</span><span>n</span><span>c</span>
                 <div class="relative">
-                    <span class="item-change item-show">e</span>
-                    <span class="item-change item-show">s</span>
+                    <span class="item-change item-show-4">e</span>
+                    <span class="item-change item-show-4">s</span>
                     <span 
-                        class="item-change item-hide-1 absolute">
+                        class="item-change item-hide-4 absolute">
                         <svg width="138" height="80" viewBox="0 0 138 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M91.75 7.08334V13.6667H46.25V7.08334H15.9167V13.6667H8.33337V66.3333H15.9167V72.9167H38.6667V59.75H46.25V53.1667H53.8334V46.5833H84.1667V53.1667H91.75V59.75H99.3334V72.9167H122.083V66.3333H129.667V13.6667H122.083V7.08334H91.75Z" fill="white"/>
                             <path d="M46.25 53.1666H53.8333V59.7499H46.25V53.1666Z" fill="#EC1F23"/>
